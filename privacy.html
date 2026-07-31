@@ -3,73 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - Monster Ball</title>
+    <title>Privacy Policy - Stickman Ball</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
+            max-width: 800px;
+            margin: 0 auto;
             background: #fff;
-            padding: 40px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #ff5500;
+        h1, h2, h3 {
+            color: #ff4400; /* لون من تصميم اللعبة */
+        }
+        .lang-switch {
             text-align: center;
-            border-bottom: 2px solid #ff5500;
-            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        h2 {
-            color: #444;
-            margin-top: 30px;
+        .lang-switch button {
+            background-color: #ff4400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0 5px;
         }
-        p {
-            margin-bottom: 15px;
+        .lang-switch button:hover {
+            background-color: #e63d00;
         }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
+        #en-policy {
+            display: none; /* يتم إخفاء الإنجليزية في البداية */
+            direction: ltr;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>سياسة الخصوصية لتطبيق Monster Ball</h1>
-        
-        <p>تاريخ التحديث: 10 مارس 2026</p>
 
-        <p>تعتبر خصوصيتك أمراً بالغ الأهمية بالنسبة لنا. توضح هذه الصفحة كيف يقوم تطبيق <strong>Monster Ball</strong> بالتعامل مع البيانات والمعلومات.</p>
-
-        <h2>1. جمع البيانات واستخدامها</h2>
-        <p>تطبيق Monster Ball هو لعبة ترفيهية تهدف لتقديم أفضل تجربة للمستخدم. نحن لا نقوم بجمع أي معلومات تعريف شخصية (مثل الاسم، البريد الإلكتروني، أو رقم الهاتف) بشكل مباشر من المستخدمين.</p>
-
-        <h2>2. خدمات الطرف الثالث والإعلانات</h2>
-        <p>نحن نستخدم خدمة <strong>Google AdMob</strong> لعرض الإعلانات داخل التطبيق. قد يقوم هؤلاء المزودون بجمع واستخدام معرفات الإعلانات من جهازك لتقديم إعلانات مخصصة لك. يمكنك مراجعة سياسة خصوصية Google لمعرفة كيفية استخدامهم للبيانات.</p>
-
-        <h2>3. أمن البيانات</h2>
-        <p>بما أننا لا نجمع أو نخزن أي بيانات شخصية على خوادمنا، فإن مخاطر تسريب البيانات الشخصية غير موجودة من طرفنا. نحن نلتزم بتوفير بيئة لعب آمنة لجميع المستخدمين.</p>
-
-        <h2>4. حقوق المستخدم</h2>
-        <p>لك الحق في استخدام اللعبة والاستمتاع بكافة ميزاتها دون الحاجة لمشاركة أي بيانات خاصة. يمكنك أيضاً التحكم في تفضيلات الإعلانات من خلال إعدادات جهاز الأندرويد الخاص بك.</p>
-
-        <h2>5. التغييرات على سياسة الخصوصية</h2>
-        <p>قد نقوم بتحديث هذه السياسة من وقت لآخر لمواكبة التغييرات في اللعبة أو القوانين المنظمة. سيتم نشر أي تغييرات جديدة في هذه الصفحة فور اعتمادها.</p>
-
-        <h2>6. التواصل معنا</h2>
-        <p>إذا كان لديك أي استفسارات حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر قنواتنا الرسمية على تيليجرام أو واتساب المتاحة داخل اللعبة.</p>
-
-        <div class="footer">
-            &copy; 2026 Monster Ball Game. جميع الحقوق محفوظة.
-        </div>
+<div class="container">
+    <div class="lang-switch">
+        <button onclick="showArabic()">العربية</button>
+        <button onclick="showEnglish()">English</button>
     </div>
+
+    <!-- النسخة العربية -->
+    <div id="ar-policy">
+        <h1>سياسة الخصوصية لتطبيق Stickman Ball</h1>
+        
+        <h3>1. جمع البيانات واستخدامها:</h3>
+        <p>تطبيق Stickman Ball هو لعبة ترفيهية تهدف إلى تقديم أفضل تجربة للمستخدم. نحن لا نقوم بجمع أي معلومات تحديد هوية شخصية (مثل الاسم، البريد الإلكتروني، أو رقم الهاتف) مباشرةً.</p>
+        
+        <h3>2. خدمات الأطراف الثالثة والإعلانات:</h3>
+        <p>نحن نستخدم خدمة Google AdMob لعرض الإعلانات داخل التطبيق. قد يقوم مقدمو الخدمة هؤلاء بجمع واستخدام معرفات الإعلانات من جهازك لتقديم إعلانات مخصصة لك. يرجى مراجعة سياسة خصوصية Google لمعرفة كيفية استخدامهم للبيانات.</p>
+        
+        <h3>3. أمن البيانات:</h3>
+        <p>بما أننا لا نجمع أي بيانات شخصية، فلا توجد مخاطر تتعلق بتسريب البيانات الشخصية من جانبنا. نحن نهتم بسلامة تجربة اللعب الخاصة بك.</p>
+        
+        <h3>4. حقوق المستخدم:</h3>
+        <p>لك الحق في استخدام اللعبة والاستمتاع بجميع ميزاتها دون الحاجة إلى مشاركة بياناتك. يمكنك أيضاً اختيار عدم مشاهدة الإعلانات بإغلاقها عند ظهورها.</p>
+        
+        <h3>5. التغييرات في سياسة الخصوصية:</h3>
+        <p>قد نقوم بتحديث هذه السياسة من وقت لآخر لإضافة ميزات جديدة أو للامتثال للقوانين. سيتم نشر أي تغييرات هنا بمجرد اعتمادها.</p>
+        
+        <p><strong>باستخدام التطبيق، فإنك توافق على هذه السياسة. إذا كان لديك أي استفسارات، يمكنك التواصل معنا عبر قنواتنا الرسمية.</strong></p>
+    </div>
+<!-- النسخة الإنجليزية -->
+    <div id="en-policy">
+        <h1>Privacy Policy for Stickman Ball</h1>
+        
+        <h3>1. Data Collection and Usage:</h3>
+        <p>The Stickman Ball app is an entertainment game aimed at providing the best user experience. We do not collect any personally identifiable information (such as name, email, or phone number) directly.</p>
+        
+        <h3>2. Third-Party Services and Ads:</h3>
+        <p>We use Google AdMob service to display ads within the app. These providers may collect and use advertising identifiers from your device to provide personalized ads to you. Please review Google's privacy policy to see how they use data.</p>
+        
+        <h3>3. Data Security:</h3>
+        <p>Since we do not collect any personal data, there are no risks related to personal data leakage from our side. We care about the safety of your gaming experience.</p>
+        
+        <h3>4. User Rights:</h3>
+        <p>You have the right to use the game and enjoy all its features without needing to share your data. You can also choose not to watch ads by closing them when they appear.</p>
+        
+        <h3>5. Changes to the Privacy Policy:</h3>
+        <p>We may update this policy from time to time to add new features or comply with laws. Any changes will be posted here once adopted.</p>
+        
+        <p><strong>By using the app, you agree to this policy. If you have any inquiries, you can contact us through our official channels.</strong></p>
+    </div>
+</div>
+
+<script>
+    function showArabic() {
+        document.getElementById('ar-policy').style.display = 'block';
+        document.getElementById('en-policy').style.display = 'none';
+        document.documentElement.lang = 'ar';
+        document.documentElement.dir = 'rtl';
+    }
+
+    function showEnglish() {
+        document.getElementById('ar-policy').style.display = 'none';
+        document.getElementById('en-policy').style.display = 'block';
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+    }
+</script>
+
 </body>
 </html>
